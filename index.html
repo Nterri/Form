@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220410105241">
+   <link rel="icon" href="img/favicon.png" type="image/png">
+   <title>Form</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <main>
+         <div class="form__container container">
+            <div class="form__slider slider">
+               <div class="slider__page page">
+                  <h1 class="page__title">Post Your Requirements</h1>
+                  <div class="page__text">Please fill the form below to receive a quote for workspace. <br> Please add all the details required.</div>
+                  <div class="page__content content-page">
+                     <div class="content-page__head">
+                        <h2 class="content-page__title">Contact details</h2>
+                        <div class="content-page__text">Please fill your information so we can get in touch with you.
+                        </div>
+                     </div>
+                     <div class="content-page__main">
+                        <form class="form" novalidate>
+                           <!-- Hidden Required Fields -->
+                           <input type="hidden" name="project_name" value="Name">
+                           <input type="hidden" name="admin_email" value="mail">
+                           <input type="hidden" name="form_subject" value="subject">
+                           <!-- END Hidden Required Fields -->
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Name</h3>
+                              <input class="name form-input all" tabindex="1" type="text" name="name"
+                                 placeholder="Your Name" required>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Phone Number</h3>
+                              <input class="phone form-input all" tabindex="2" type="text" name="phone"
+                                 placeholder="+7 (999) 999-99-99" required>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Email </h3>
+                              <input class="email form-input all" tabindex="3" type="text" name="E-mail"
+                                 placeholder="Your Mail ID" required>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Date</h3>
+                              <input class="date form-input all" tabindex="4" type="text" name="date"
+                                 placeholder="dd - mm - yyyy" required>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="content-page__next">
+                     <div class="content-page__button"><button class="button next" tabindex="5">Next</button></div>
+                  </div>
+               </div>
+               <div class="slider__page page">
+                  <form class="form" novalidate>
+                     <div class="page__content content-page">
+                        <div class="content-page__head">
+                           <h2 class="content-page__title">Your Requirements</h2>
+                        </div>
+                        <div class="content-page__main">
+                           <!-- Hidden Required Fields -->
+                           <input type="hidden" name="project_name" value="Name">
+                           <input type="hidden" name="admin_email" value="mail">
+                           <input type="hidden" name="form_subject" value="subject">
+                           <!-- END Hidden Required Fields -->
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Space Type</h3>
+                              <div class="select">
+                                 <button type="button" tabindex="6" class="select__toggle all" name="event" value=""
+                                    data-select="toggle" data-index="-1">Event Space</button>
+                                 <div class="select__dropdown">
+                                    <ul class="select__options">
+                                       <li class="select__option" data-select="option" data-value="event1"
+                                          data-index="0">
+                                          Event 1</li>
+                                       <li class="select__option" data-select="option" data-value="event2"
+                                          data-index="1">
+                                          Event 2</li>
+                                       <li class="select__option" data-select="option" data-value="event3"
+                                          data-index="2">
+                                          Event 3</li>
+                                       <li class="select__option" data-select="option" data-value="event4"
+                                          data-index="3">
+                                          Event 4</li>
+                                       <li class="select__option" data-select="option" data-value="event5"
+                                          data-index="4">
+                                          Event 5</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Number of People</h3>
+                              <input class="number form-check all" tabindex="7" type="number" name="number"
+                                 placeholder="1" required>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <div class="block-page-content__date date-content">
+                                 <div class="date-content__in">
+                                    <h3 class="block-page-content__title">Check In</h3>
+                                    <input class="check-in date form-check all" tabindex="8" type="text" name="checkIn"
+                                       placeholder=" dd - mm - yyyy" required>
+                                 </div>
+                                 <div class="date-content__out">
+                                    <h3 class="block-page-content__title">Check Out</h3>
+                                    <input class="check-out date form-check all" tabindex="9" type="text"
+                                       name="checkOut" placeholder=" dd - mm - yyyy" required>
+                                 </div>
+                              </div>
+                              <div class="block-page-content__error">Дата начала не может быть больше даты конца</div>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Location</h3>
+                              <div class="select">
+                                 <button type="button" tabindex="10" class="select__toggle all" name="area" value=""
+                                    data-select="toggle" data-index="-1">City/Area</button>
+                                 <div class="select__dropdown">
+                                    <ul class="select__options">
+                                       <li class="select__option" data-select="option" data-value="msk" data-index="0">
+                                          Moscow</li>
+                                       <li class="select__option" data-select="option" data-value="ny" data-index="1">
+                                          New York</li>
+                                       <li class="select__option" data-select="option" data-value="wsh" data-index="2">
+                                          Washington</li>
+                                       <li class="select__option" data-select="option" data-value="prs" data-index="3">
+                                          Paris</li>
+                                       <li class="select__option" data-select="option" data-value="lnd" data-index="4">
+                                          London</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <h3 class="block-page-content__title">Any specific preferences </h3>
+                              <div class="select">
+                                 <button type="button" tabindex="11" class="select__toggle textarea-choice not-active" name="choice"
+                                    value="" data-select="toggle" data-index="-1">Choice</button>
+                                 <div class="select__dropdown">
+                                    <ul class="select__options">
+                                       <li class="select__option" data-select="option" data-value="yes" data-index="0">
+                                          Yes</li>
+                                       <li class="select__option" data-select="option" data-value="no" data-index="1">
+                                          No</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="content-page__block block-page-content">
+                              <textarea class="textarea" tabindex="12" name="mention" id=""
+                                 placeholder="Please mention here"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="content-page__next submit">
+                        <div class="content-page__button"><button class="button text prev">Back</button></div>
+                        <div class="content-page__button"><button tabindex="13" type="submit" class="button submit">Submit</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="well-send">
+            <div class="well-send__load"><img src="img/load.gif" alt="load"></div>
+            <div class="well-send__text">Заявка отправлена<span></span></div>
+         </div>
+   </div>
+   </main>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220410105241"></script>
+   <script src="js/app.min.js?_v=20220410105241"></script>
+</body>
+
+</html>
